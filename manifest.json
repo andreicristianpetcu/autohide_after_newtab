@@ -1,35 +1,13 @@
 {
-    "name": "Toggle Pin Tab",
-    "description": "Press Alt+P to toggle the pin stat of the current tab",
-    "homepage_url": "https://github.com/andreicristianpetcu/toggle-pin-tab",
+    "name": "Autohide after newtab",
+    "description": "",
+    "homepage_url": "https://github.com/andreicristianpetcu/autohide_after_newtab",
     "author": "Andrei Petcu",
     "version": "1.0.0",
     "background": {
         "scripts": ["background.js"]
     },
-    "icons": {
-        "32": "images/icon32x32.png",
-        "64": "images/icon64x64.png"
-    },
-    "commands": {
-        "toggle-pin-tab": {
-            "suggested_key": {
-                "default": "Alt+P"
-            },
-            "description": "Toogle the pin stat of the current tab"
-        }
-    },
-    "content_scripts": [{
-        "matches": [
-            "http://*/*",
-            "https://*/*"
-        ],
-        "js": [
-            "contentscript.js"
-        ],
-        "run_at": "document_start",
-        "all_frames": false
-    }],
+    "permissions": [ "tabs" ],
     "applications": {
         "gecko": {
             "id": "{5330e4ba-e039-4267-8e77-e49d9c56c14d}"

@@ -1,11 +1,18 @@
 
 function handleUpdated(tabId, changeInfo, tabInfo) {
   function logTabsForWindows(windowInfoArray) {
-    for (windowInfo of windowInfoArray) {
-      var updating = browser.windows.update(
-        windowInfo.id, { titlePreface: "newtab:" }
-      )
-    }
+    browser.tabs.query({currentWindow: true, active: true})
+    .then(activeTab => {
+      if(activeTab[0].url === "about:newtab"){
+        var updating = browser.windows.update(
+          activeTab[0].windowId, { titlePreface: "about:newtab" }
+        )
+      } else {
+        var updating = browser.windows.update(
+          activeTab[0].windowId, { titlePreface: " " }
+        )
+      }
+    });
   }
   
   var getting = browser.windows.getAll({
