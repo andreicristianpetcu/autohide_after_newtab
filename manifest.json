@@ -1,16 +1,26 @@
 {
     "name": "Autohide after newtab",
-    "description": "",
+    "description": "This is a WebExtension what auto hides the bookmark bar like Chrome. This also need userChrome.css changes in http://bit.ly/2zZgUGm The icon is created by Muneer A.Safiah and it is CC-BY-SA 3.0 http://bit.ly/2yVwXXY",
     "homepage_url": "https://github.com/andreicristianpetcu/autohide_after_newtab",
     "author": "Andrei Petcu",
-    "version": "1.0.0",
-    "background": {
-        "scripts": ["background.js"]
+    "version": "1.1.0",
+    "icons": {
+        "16": "images/icon-16.png",
+        "48": "images/icon-48.png",
+        "96": "images/icon-96.png",
+        "128": "images/icon-128.png"
     },
-    "permissions": [ "tabs" ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "permissions": [
+        "tabs"
+    ],
     "applications": {
         "gecko": {
-            "id": "{5330e4ba-e039-4267-8e77-e49d9c56c14d}"
+            "id": "{2fe5bf2e-f5a1-41df-9005-7f8b6d2b8f1f}"
         }
     },
     "manifest_version": 2
