@@ -5,6 +5,7 @@ https://addons.mozilla.org/en-US/firefox/addon/autohideafternewtab/
 
 In order to use this WebExtension you need to open your profile directory (you can find it in about:support ), create a new directory named chrome and inside it create a file named userChrome.css. Put the following contents in this file:
 
+https://vimeo.com/240436456
 
 ```css
 #main-window #PersonalToolbar {
