@@ -3,7 +3,7 @@ async function handleUpdated(tabId, changeInfo, tabInfo) {
   const activeTabs = await browser.tabs.query({ currentWindow: true, active: true })
   const activeTab = activeTabs[0];
   var newTitlePreface = " ";
-  if (activeTab.url === "about:newtab") {
+  if (activeTab.url === "about:newtab" || activeTab.url === "about:privatebrowsing") {
     newTitlePreface = "about:newtab ";
   }
   browser.windows.update(activeTab.windowId, { titlePreface: newTitlePreface });

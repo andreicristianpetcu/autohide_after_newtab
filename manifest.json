@@ -3,7 +3,7 @@
     "description": "This is a WebExtension what auto hides the bookmark bar like Chrome. This also need userChrome.css changes in http://bit.ly/2zZgUGm The icon is created by Muneer A.Safiah and it is CC-BY-SA 3.0 http://bit.ly/2yVwXXY",
     "homepage_url": "https://github.com/andreicristianpetcu/autohide_after_newtab",
     "author": "Andrei Petcu",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "icons": {
         "16": "images/icon-16.png",
         "48": "images/icon-48.png",
