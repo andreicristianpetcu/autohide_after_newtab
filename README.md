@@ -13,6 +13,7 @@ https://vimeo.com/240436456
 }
 #main-window[title^="about:newtab"] #PersonalToolbar,
 #main-window[title^="New Tab"] #PersonalToolbar,
+#main-window[title^="Firefox Developer Edition"] #PersonalToolbar,
 #main-window[title^="Nightly"] #PersonalToolbar {
   visibility: visible !important;
 }
